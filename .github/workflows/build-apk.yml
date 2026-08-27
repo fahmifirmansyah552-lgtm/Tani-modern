@@ -12,7 +12,7 @@ jobs:
 
       - name: Unpack TANI MODERN project
         run: |
-          unzip -o "tani-modern-final 2.zip" -d project
+          unzip -o "tani-modern-final.zip" -d project
           cd project/tani-modern-final
           test -f package.json
           test -f capacitor.config.ts
