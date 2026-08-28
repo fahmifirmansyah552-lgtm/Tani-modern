@@ -36,7 +36,8 @@ jobs:
         working-directory: project/tani-modern-final
         run: |
           npm install
-          npm install -D typescript@5.9.3
+          npm install _D typescript@5.9.3
+          npm install __sav_dev
           npx cap add android
           npx cap sync android
 
