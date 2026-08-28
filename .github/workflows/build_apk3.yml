@@ -32,15 +32,15 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install dependencies and create Android project
+      - name: "Install dependencies and create Android project"
         working-directory: project/tani-modern-final
         run: |
           npm install
-          npm install _d typescript
+          npm install __sav-dev typescript@5.9.3
           npx cap add android
           npx cap sync android
 
-      - name: Build debug APK
+      - name: "Build debug APK"
         working-directory: project/tani-modern-final/android
         run: ./gradlew assembleDebug
 
